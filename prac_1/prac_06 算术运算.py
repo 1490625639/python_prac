@@ -1,0 +1,11 @@
+a=1
+b=2
+c=3
+print(a+b)
+print(b-a)
+print(b/a)
+print(b*c)
+print(b%a)
+print(b**3)
+print(c//b)
+print("好的我知道了"*10)
