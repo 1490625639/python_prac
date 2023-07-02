@@ -25,7 +25,7 @@ def mail():
 
 if __name__ == '__main__':
     i=1
-    for i in range(1,3):
+    for i in range(1,2):
         ret = mail()
         i+=1
 if ret:
