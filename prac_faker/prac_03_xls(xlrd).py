@@ -2,7 +2,7 @@ from faker import Faker
 import xlrd
 from xlutils.copy import copy
 import xlwt
-# 测试代码1231
+
 # 使用xlrd库将数据写入到xls文件中
 
 fake = Faker(locale='zh_CN')  # 创建一个使用中文数据的Faker对象
