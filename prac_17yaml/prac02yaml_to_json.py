@@ -14,9 +14,10 @@ import json
 
 def yaml_to_json(yamlPath):
     with open(yamlPath, encoding="utf-8") as f:
+        # 1 将YAML数据转换为Python字典或列表等数据结构。
         datas = yaml.load(f, Loader=yaml.FullLoader)
-    #jsonDatas = json.dumps(datas, indent=5)
-    # 将字典的内容转换为json格式的字符串.实际不可用，因为转成字符串后有""
+        print(f"数据：{datas}\n类型：{type(datas)}")
+    # 2.将字典的内容转换为json格式
     with open("./new.json", "w", encoding="utf-8") as newfile:
         json.dump(datas, newfile, indent=5)
 
